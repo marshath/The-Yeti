@@ -1,0 +1,65 @@
+//
+// Responsive: Tablet to desktop
+// --------------------------------------------------
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+  // Fixed grid
+  @include grid-core($gridColumnWidth768, $gridGutterWidth768);
+
+  // Fluid grid
+  @include grid-fluid($fluidGridColumnWidth768, $fluidGridGutterWidth768);
+
+  // Input grid
+  @include grid-input($gridColumnWidth768, $gridGutterWidth768);
+
+  // No need to reset .thumbnails here since it's the same $gridGutterWidth
+
+
+
+
+  // Custom styles
+  // =============
+	
+	#sidebar article.latest-news img {
+		float: none;
+		margin: 0px 10px 10px 0px;
+	}
+	
+	#slide-main {
+		h2 {
+			top: 32.5%;
+			left: 20px;
+			}
+		.caption-box {
+			top: 55%;
+			left: 20px;
+			max-width: 60%;
+			.slide-read-more {
+				background: $orange;			
+				padding: 1em;
+				color: $white;
+				display: inline-block;
+				&:hover {background: $orange darken;}
+			}
+			p {
+				background: rgba(0,0,0,.7) ;
+				padding: 10px;
+				color: $white;
+				margin-bottom: 0.4em;
+				font-weight: 500;
+				font-size: 17px;
+			}
+			
+		}
+	
+	}
+	
+	.sponsor-ad { 
+		width:414px; 
+	}
+
+  
+// end mediaquery
+}
