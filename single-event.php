@@ -44,7 +44,7 @@ Template Name: Events
 ?>
 
 <p>
-	<?php echo $EM_Event->output('{is_past}<h4>This event is over. Check the Race Results link below for information about what happened. Cette manifestation est terminée. Cliquez sur le lien Résultats de la course ci-dessous pour plus d\'informations à propos de ce qui s\'est passé.</h4>{/is_past}');?>
+	<?php echo $EM_Event->output('{is_past}<h4><span class="en">This event is over. The results will be posted as soon as they become available on the <a href="http://theyeti.ca/results/">Results page</a>.</span><span class="fr">Cette manifestation est terminee. Les resultats seront affiches des qu\'ils seront disponibles sur <a href="http://theyeti.ca/fr/results/">la page des resultats</a>.</span></h4>{/is_past}');?>
 </p>
 
 

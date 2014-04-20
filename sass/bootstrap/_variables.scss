@@ -26,6 +26,7 @@ $green:                 #5e5e56 !default;
 $red:                   #9d261d !default;
 $yellow:                #ffc40d !default;
 $orange:                #de7b27 !default;
+$orangeLight:           #ff7400 !default;
 $pink:                  #c3325f !default;
 $purple:                #7a43b6 !default;
 
@@ -53,7 +54,7 @@ $baseFontFamily:        $sansFontFamily !default;
 $baseLineHeight:        20px !default;
 $altFontFamily:         $serifFontFamily !default;
 
-$headingsFontFamily:    "DirtyHeadlineRegular"; // empty to use BS default, $baseFontFamily
+$headingsFontFamily:    $sansFontFamily !default; // empty to use BS default, $baseFontFamily
 $headingsFontWeight:    bold !default;    // instead of browser default, bold
 $headingsColor:         $green; // empty to use BS default, $textColor
 

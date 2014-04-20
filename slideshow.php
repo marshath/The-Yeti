@@ -14,15 +14,15 @@
 	        <img src="<?php the_field('slideshow_image'); ?>" alt="" />
 	       
 	        <div class="caption-box">
-	        <!-- <h2><?php the_field('slideshow_title_text'); ?></h2>
-	        <p><?php the_field('slideshow_caption_text'); ?></p>
-	        <a href="<?php the_field('page_link'); ?>" class="slide-read-more">Find Out More</a> -->
-	        <div class="caption-box-bg">
-		        <h2><?php the_title(); ?></h2>
-		        <p><?php the_content(); ?></p>
-	        </div>
-	        <a href="<?php the_field('page_link'); ?>" class="button"><span class="en">Find Out More </span><span class="fr">Pour en savoir plus</span></a>
-	        </div>
+	        
+		        <div class="caption-box-bg">
+			        <h2><?php the_title(); ?></h2>
+			        <p><?php the_content(); ?></p>
+		        </div>
+		        
+		        <a href="<?php the_field('slideshow_link'); ?>" class="button"><span class="en"><?php the_field('slideshow_button_en'); ?> </span><span class="fr"><?php the_field('slideshow_button_fr'); ?></span></a>
+		        
+		    </div>
 	      </li>
 
 	     
