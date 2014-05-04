@@ -10,6 +10,11 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  .lower-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   // Negative indent the now static "fixed" navbar
   .navbar-fixed-top,
   .navbar-fixed-bottom,
@@ -200,11 +205,6 @@
     padding-right: 0px;
   }
 
-  .lower-content {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
   #submenu {
     padding: 1em 0em 1em 0px;
     margin-bottom: -99999px;
@@ -306,9 +306,6 @@
 	}
 	.sponsor-ad { 
 		width:100%; 
-	}
-	.sidebar-hm { 
-		padding-left:0; 
 	}
 
 

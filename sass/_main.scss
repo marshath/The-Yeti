@@ -248,7 +248,7 @@ header.top-header {
 			font-size: 17px;
 		}
 
-		}
+	}
 
 }
 
@@ -437,6 +437,9 @@ article  {
 	}
 	.sidebar-sponsor {
 		margin: 0px 0 26px;
+		.text-widget {
+			list-style: none;
+		}
 	}
 }
 
@@ -567,7 +570,16 @@ article  {
 	margin: 1em 1em 1em 0em;
 }
 
-.sponsor-ad { width:540px; float:right; }
+.sponsor-ad { 
+	width:540px; 
+	float:right; 
+	> li {
+		list-style: none;
+	}
+}
+.lower-content {
+	margin-bottom: 2em;
+}
 
 
 .search-form {
@@ -948,7 +960,7 @@ footer .social-bar-top li a {
 		margin: 0 1%; 
 		text-align:center;
 	}
-	a {
+	li a {
 		color: $orangeLight;
 		&:hover {
 			color:darken($orangeLight,15);
@@ -1078,7 +1090,7 @@ footer .social-bar-top li a {
 
 
 .sidebar-hm { 
-	padding: 4em 1em 0 3em; 
+	padding: 4em 1em 0 20px; 
 	font-size: 1.1em; 
 	p:first-child { 
 		font-size: 1.2em; 
@@ -1090,6 +1102,10 @@ footer .social-bar-top li a {
 	}
 	h2 { 
 		font-size:1.5em; 
+	}
+	@media screen and (max-width : 979px) {
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 }
 .events-hm h1 {

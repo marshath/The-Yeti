@@ -44,9 +44,7 @@
 				&:hover {background: $orange darken;}
 			}
 			p {
-				background: rgba(0,0,0,.7) ;
-				padding: 10px;
-				color: $white;
+				color: #111;
 				margin-bottom: 0.4em;
 				font-weight: 500;
 				font-size: 17px;
@@ -57,9 +55,13 @@
 	}
 	
 	.sponsor-ad { 
-		width:414px; 
+		width:414px;
 	}
 
+  .lower-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   
 // end mediaquery
 }
