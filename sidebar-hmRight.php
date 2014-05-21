@@ -4,9 +4,11 @@
 
 <aside id="sidebar" class="span4" style="float:right;">
 
-	<div style="sidebar-sponsor">
-		<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Homepage Sidebar") ) : ?>
-		<?php endif; ?>
+	<div class="sidebar-sponsor">
+		<ul>
+			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Homepage Sidebar") ) : ?>
+			<?php endif; ?>
+		</ul>
 	</div>
 	
 	<div id="fb-root"></div>
