@@ -37,7 +37,7 @@
 			// remove em dash
 			$('#menu-fontsize').remove();
 			// loop through each ul in menu
-			$ULs.each(function(i) {	
+			$ULs.each(function(i) {
 				// cache this ul
 				var $ul = $(this);
 				// get all (li) children of this ul
@@ -78,7 +78,7 @@
 					$childUl.css(offsetDirection,'100%');
 				});
 			}).hide();
-			
+
 		});
 	};
 	// expose defaults
@@ -87,5 +87,5 @@
 		maxWidth		: 25,		// requires em unit.
 		extraWidth		: 0			// extra width can ensure lines don't sometimes turn over due to slight browser differences in how they round-off values
 	};
-	
+
 })(jQuery); // plugin code ends

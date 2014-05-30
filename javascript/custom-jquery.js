@@ -9,7 +9,7 @@
 
 
 jQuery(document).ready(function () {
-    jQuery('nav#mobile-nav').meanmenu();
+    $('nav#mobile-nav').meanmenu();
 });
 
 $(window).load(function() {
@@ -33,7 +33,7 @@ $("#main-content table").addClass("table table-striped");
 $(window).load(function() {
 
     $('.flexslider').flexslider({
-    	 controlNav: false
+       controlNav: false
     });
 
 

@@ -57,7 +57,7 @@ Template Name: Events
 
 
 				<h4><span class="en">Description:</span> <span class="fr">Description:</span></h4>
-				<p><?php the_field('notes'); ?></p>
+				<?php the_field('notes'); ?>
 				
 				
 	

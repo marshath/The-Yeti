@@ -43,15 +43,15 @@
 
 <body <?php body_class(); ?>>
 
-<?php //-- Google Tag Manager
-// <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-W75JNN"
-// height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-// <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-// new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-// j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-// '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-// })(window,document,'script','dataLayer','GTM-W75JNN');</script>
-// <!-- End Google Tag Manager -- ?>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-W75JNN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W75JNN');</script>
+<!-- End Google Tag Manager -->
 
 
 
@@ -59,7 +59,8 @@
 		<div class="page-wrapper">
 
 			<nav id="mobile-nav">
-				<?php wp_nav_menu( array('theme_location' => 'primary') ); ?>	</nav>
+				<?php wp_nav_menu( array('theme_location' => 'primary') ); ?></nav>
+<?php //echo do_shortcode('[dcwp-jquery-accordion menu="Primary"]'); ?>
 
 				<header class="top-header">
 					<div class="row">
@@ -68,7 +69,7 @@
 
 							<div class="header-top clearfix">
 								 <div class="language">
-								 	<span class="en">Language:</span> <span class="fr">Langue:</span> <?php // echo qtrans_generateLanguageSelectCode('text'); ?>
+								 	<span class="en">Language:</span> <span class="fr">Langue:</span> <?php echo qtrans_generateLanguageSelectCode('text'); ?>
 								 </div>
 								<?php get_template_part('sidepanel-social'); ?>
 							</div>
@@ -88,7 +89,6 @@
 						<div class="sponsor-ad">
 							<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Banner Ad')) :
 							endif; ?>
-							<!-- <a href="http://atlassnowshoe.com" target="_blank"><img src="/wp-content/uploads/sites/2/2013/11/ATLAS-SUSPENSION-BANNER-728x90.gif" alt=""></a> -->
 						</div>
 
 					</div> <!-- header row -->
@@ -102,7 +102,7 @@
 
 					</div>
 				</nav>
-				
+
 				<?php
 				if ( is_front_page() ) {
 					get_template_part( 'slideshow' );

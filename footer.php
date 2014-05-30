@@ -38,13 +38,14 @@
   <div id="footer-bottom">
     <div class="footer-bottom-spikes"></div>
     <div class="row">
+      <div class="span6"><?php // wp_nav_menu( array('theme_location' => 'secondary') ); ?></div>
       <div class="span12">
       	<div class="social-menu"><?php get_template_part('sidepanel-social'); ?></div>
-
-		<?php wp_nav_menu( array('theme_location' => 'secondary', 'menu_class' => 'footer-menu') ); ?>
 		
+		<?php wp_nav_menu( array('theme_location' => 'secondary', 'menu_class' => 'footer-menu') ); ?>
+
         <p class="copyright">
-          &#169; The Yeti  <?php the_date('Y'); ?>. All rights reserved. | <a href="/privacy-policy/">Privacy Policy</a>
+          &#169; 5 Peaks Adventures Ltd. All rights reserved. | <a href="/privacy-policy/">Privacy Policy</a>
         </p>
       </div>
     </div> 
